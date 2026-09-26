@@ -1,0 +1,713 @@
+{
+  "categories": [
+    "Foundation",
+    "Strategy",
+    "Content & copy",
+    "SEO & discovery",
+    "Conversion",
+    "Paid & distribution",
+    "Measurement",
+    "Growth & retention",
+    "Sales & GTM"
+  ],
+  "columns": [
+    {
+      "title": "SEO & content",
+      "slugs": [
+        "seo-audit",
+        "ai-seo",
+        "site-architecture",
+        "programmatic-seo",
+        "schema",
+        "aso",
+        "content-strategy"
+      ]
+    },
+    {
+      "title": "Conversion",
+      "slugs": [
+        "cro",
+        "signup",
+        "onboarding",
+        "popups",
+        "paywalls"
+      ]
+    },
+    {
+      "title": "Content & copy",
+      "slugs": [
+        "copywriting",
+        "copy-editing",
+        "cold-email",
+        "emails",
+        "social",
+        "video",
+        "image",
+        "sms"
+      ]
+    },
+    {
+      "title": "Paid & measurement",
+      "slugs": [
+        "ads",
+        "ad-creative",
+        "ab-testing",
+        "analytics",
+        "attribution"
+      ]
+    },
+    {
+      "title": "Growth & retention",
+      "slugs": [
+        "referrals",
+        "free-tools",
+        "churn-prevention",
+        "community-marketing",
+        "lead-magnets",
+        "co-marketing"
+      ]
+    },
+    {
+      "title": "Sales & GTM",
+      "slugs": [
+        "revops",
+        "sales-enablement",
+        "launch",
+        "pricing",
+        "competitors",
+        "competitor-profiling",
+        "directory-submissions",
+        "prospecting",
+        "public-relations",
+        "events",
+        "influencer-marketing"
+      ]
+    },
+    {
+      "title": "Strategy",
+      "slugs": [
+        "marketing-ideas",
+        "marketing-psychology",
+        "customer-research",
+        "marketing-plan",
+        "marketing-council",
+        "marketing-loops",
+        "offers"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "slug": "product-marketing",
+      "title": "Product Marketing Context",
+      "category": "Foundation",
+      "foundation": true,
+      "summary": "Creates and versions .agents/product-marketing.md \u2014 product, audience, and positioning that every other skill reads first.",
+      "prompt": "Create my product marketing context. Draft it from this repo, then I'll correct what's wrong and fill the gaps.",
+      "related": [
+        "content-strategy",
+        "copywriting",
+        "social",
+        "copy-editing"
+      ]
+    },
+    {
+      "slug": "content-strategy",
+      "title": "Content Strategy",
+      "category": "Strategy",
+      "foundation": true,
+      "summary": "Decides what to publish: pillars, searchable versus shareable pieces, and a prioritized calendar. Writing a single piece is copywriting.",
+      "prompt": "Plan a content strategy from our product marketing context. Give me pillars, a topic cluster, and the next five pieces to ship.",
+      "related": [
+        "copywriting",
+        "seo-audit",
+        "social",
+        "ai-seo"
+      ]
+    },
+    {
+      "slug": "social",
+      "title": "Social Content",
+      "category": "Content & copy",
+      "foundation": true,
+      "summary": "Plans and drafts social content for LinkedIn, X, Instagram, TikTok, and Facebook \u2014 calendars, hooks, carousels, and short-form video.",
+      "prompt": "Build a two-week LinkedIn and X calendar from our product marketing context. Three pillars, mostly educational, one promotional post.",
+      "related": [
+        "content-strategy",
+        "copywriting",
+        "ad-creative",
+        "public-relations"
+      ]
+    },
+    {
+      "slug": "copywriting",
+      "title": "Copywriting",
+      "category": "Content & copy",
+      "foundation": true,
+      "summary": "Writes or rewrites marketing page copy: homepage, landing page, pricing, feature, about, and product pages.",
+      "prompt": "Write homepage copy. One primary action: start a free trial. Use our product marketing context and keep the headline specific.",
+      "related": [
+        "copy-editing",
+        "cro",
+        "offers",
+        "emails"
+      ]
+    },
+    {
+      "slug": "copy-editing",
+      "title": "Copy Editing",
+      "category": "Content & copy",
+      "foundation": true,
+      "summary": "Edits copy you already have, one dimension at a time, and refreshes pages that have gone stale.",
+      "prompt": "Edit this landing page with the copy-editing skill. Keep the offer the same. Show the seven sweeps and the final copy.",
+      "related": [
+        "copywriting"
+      ]
+    },
+    {
+      "slug": "marketing-ideas",
+      "title": "Marketing Ideas",
+      "category": "Strategy",
+      "summary": "Pulls SaaS marketing ideas and strategies when you need options, not a finished campaign.",
+      "prompt": "Give me marketing ideas that fit our product marketing context. Skip anything we can't run this month.",
+      "related": [
+        "marketing-plan",
+        "launch",
+        "marketing-psychology"
+      ]
+    },
+    {
+      "slug": "marketing-psychology",
+      "title": "Marketing Psychology",
+      "category": "Strategy",
+      "summary": "Applies behavioral principles and mental models to an offer, a page, or a campaign decision.",
+      "prompt": "Review our pricing page through marketing psychology. Name the principles that apply and where the page fights them.",
+      "related": [
+        "cro",
+        "pricing",
+        "copywriting"
+      ]
+    },
+    {
+      "slug": "marketing-plan",
+      "title": "Marketing Plan",
+      "category": "Strategy",
+      "summary": "Builds a full marketing plan for your product, a client, or a company you advise.",
+      "prompt": "Write a 90-day marketing plan from our product marketing context. Tie each bet to one conversion action.",
+      "related": [
+        "product-marketing",
+        "content-strategy",
+        "launch"
+      ]
+    },
+    {
+      "slug": "marketing-council",
+      "title": "Marketing Council",
+      "category": "Strategy",
+      "summary": "Stages several expert points of view on one marketing question so you can pressure-test a decision.",
+      "prompt": "Run a marketing council on whether we should lead with the free tool or the demo. I want disagreement, not a consensus paragraph.",
+      "related": [
+        "marketing-ideas",
+        "offers",
+        "pricing"
+      ]
+    },
+    {
+      "slug": "marketing-loops",
+      "title": "Marketing Loops",
+      "category": "Strategy",
+      "summary": "Sets up a repeating agent workflow \u2014 weekly, daily, or triggered \u2014 instead of a one-off task.",
+      "prompt": "Design a weekly marketing loop: review last week's content, draft next week's social, and note one experiment.",
+      "related": [
+        "marketing-ideas",
+        "social",
+        "ab-testing"
+      ]
+    },
+    {
+      "slug": "offers",
+      "title": "Offers",
+      "category": "Strategy",
+      "summary": "Designs the offer itself: value framing, bonuses, guarantees, naming, scarcity, and how someone pays.",
+      "prompt": "Rebuild our offer. The product stays the same. Strengthen the guarantee and the bonus stack, then hand the words to copywriting.",
+      "related": [
+        "pricing",
+        "copywriting",
+        "launch",
+        "sales-enablement"
+      ]
+    },
+    {
+      "slug": "customer-research",
+      "title": "Customer Research",
+      "category": "Strategy",
+      "summary": "Plans, analyzes, or synthesizes customer research so later copy and conversion work uses real language.",
+      "prompt": "Synthesize these five interview notes into pains, jobs to be done, and verbatim phrases. Flag what should update product marketing context.",
+      "related": [
+        "copywriting",
+        "cro",
+        "competitors",
+        "product-marketing"
+      ]
+    },
+    {
+      "slug": "launch",
+      "title": "Launch",
+      "category": "Strategy",
+      "summary": "Plans a product launch, feature announcement, or release: the sequence, the assets, and who hears about it.",
+      "prompt": "Plan a feature launch for next Tuesday. Include the announcement, the email, and the social posts, in that order.",
+      "related": [
+        "offers",
+        "emails",
+        "social",
+        "public-relations"
+      ]
+    },
+    {
+      "slug": "pricing",
+      "title": "Pricing Strategy",
+      "category": "Strategy",
+      "summary": "Works through pricing, packaging, and monetization, including how the pricing page explains the choice.",
+      "prompt": "Help me choose between per-seat and usage pricing. Then outline the pricing page so the packaging is obvious.",
+      "related": [
+        "offers",
+        "paywalls",
+        "cro"
+      ]
+    },
+    {
+      "slug": "cold-email",
+      "title": "Cold Email",
+      "category": "Content & copy",
+      "summary": "Writes B2B cold emails and follow-up sequences aimed at replies, not newsletter-style broadcasts.",
+      "prompt": "Write a three-email cold sequence to heads of marketing at 20\u2013100 person B2B SaaS companies. Ask for a reply, not a demo in email one.",
+      "related": [
+        "emails",
+        "prospecting",
+        "sales-enablement"
+      ]
+    },
+    {
+      "slug": "emails",
+      "title": "Email Sequences",
+      "category": "Content & copy",
+      "summary": "Creates lifecycle email: welcome series, drips, onboarding, and other automated flows.",
+      "prompt": "Create a five-email welcome sequence for new trial users. The job of the sequence is activation, not a feature tour.",
+      "related": [
+        "cold-email",
+        "onboarding",
+        "copywriting"
+      ]
+    },
+    {
+      "slug": "image",
+      "title": "Marketing Images",
+      "category": "Content & copy",
+      "summary": "Briefs, generates, or optimizes marketing images: blog heroes, social graphics, product shots, and listing visuals.",
+      "prompt": "Brief three homepage hero images that match our brand voice. Include crop, text-safe area, and what not to show.",
+      "related": [
+        "social",
+        "ad-creative",
+        "video"
+      ]
+    },
+    {
+      "slug": "video",
+      "title": "Video",
+      "category": "Content & copy",
+      "summary": "Plans or produces marketing video with AI tools and programmatic frameworks, from explainers to short-form cuts.",
+      "prompt": "Script a 45-second product demo. Open on the pain, show one workflow, end on the trial.",
+      "related": [
+        "social",
+        "ad-creative",
+        "image"
+      ]
+    },
+    {
+      "slug": "sms",
+      "title": "SMS Marketing",
+      "category": "Content & copy",
+      "summary": "Plans SMS and MMS programs \u2014 welcome, abandoned cart, post-purchase, win-back \u2014 with compliance in view.",
+      "prompt": "Draft a post-purchase SMS flow. Keep each message short, say why we're texting, and note the consent assumption.",
+      "related": [
+        "emails",
+        "copywriting",
+        "popups"
+      ]
+    },
+    {
+      "slug": "seo-audit",
+      "title": "SEO Audit",
+      "category": "SEO & discovery",
+      "summary": "Diagnoses technical and on-page SEO when rankings, indexing, speed, or traffic look wrong.",
+      "prompt": "Audit this site for SEO. Start with indexing and on-page issues, then tell me whether schema or ai-seo should come next.",
+      "related": [
+        "schema",
+        "ai-seo",
+        "site-architecture",
+        "programmatic-seo"
+      ]
+    },
+    {
+      "slug": "ai-seo",
+      "title": "AI SEO",
+      "category": "SEO & discovery",
+      "summary": "Optimizes to be cited in AI answers \u2014 AEO, GEO, and LLM visibility \u2014 including how machines find a clear description of you.",
+      "prompt": "Review our homepage and docs for AI search. Tell me what an assistant would get wrong about us today, and what to change.",
+      "related": [
+        "seo-audit",
+        "schema",
+        "content-strategy"
+      ]
+    },
+    {
+      "slug": "programmatic-seo",
+      "title": "Programmatic SEO",
+      "category": "SEO & discovery",
+      "summary": "Plans template-and-data pages at scale: locations, integrations, comparisons, and directories.",
+      "prompt": "Sketch a programmatic SEO template for integration pages. Define the unique value each URL must have so it isn't thin.",
+      "related": [
+        "seo-audit",
+        "content-strategy",
+        "site-architecture"
+      ]
+    },
+    {
+      "slug": "site-architecture",
+      "title": "Site Architecture",
+      "category": "SEO & discovery",
+      "summary": "Maps page hierarchy, navigation, URL structure, breadcrumbs, and internal links.",
+      "prompt": "Propose a site map for a SaaS with a homepage, product, pricing, blog, and docs. Call out what should not be a top-level page.",
+      "related": [
+        "seo-audit",
+        "schema",
+        "programmatic-seo"
+      ]
+    },
+    {
+      "slug": "schema",
+      "title": "Schema Markup",
+      "category": "SEO & discovery",
+      "summary": "Adds or fixes JSON-LD and structured data so pages can earn richer search results.",
+      "prompt": "Add the right schema to our homepage, pricing page, and three blog posts. Explain each type in one line.",
+      "related": [
+        "seo-audit",
+        "ai-seo"
+      ]
+    },
+    {
+      "slug": "aso",
+      "title": "App Store Optimization",
+      "category": "SEO & discovery",
+      "summary": "Audits an App Store or Google Play listing: title, subtitle, screenshots, and keywords.",
+      "prompt": "Audit this App Store URL. Prioritize listing changes that affect conversion before keyword trivia.",
+      "related": [
+        "competitors",
+        "image"
+      ]
+    },
+    {
+      "slug": "competitors",
+      "title": "Comparison Pages",
+      "category": "SEO & discovery",
+      "summary": "Writes competitor comparison and alternative pages for search and for sales conversations.",
+      "prompt": "Draft an alternative page against our closest competitor. Be specific about where we lose, not only where we win.",
+      "related": [
+        "competitor-profiling",
+        "sales-enablement",
+        "seo-audit"
+      ]
+    },
+    {
+      "slug": "directory-submissions",
+      "title": "Directory Submissions",
+      "category": "SEO & discovery",
+      "summary": "Plans submissions to startup, SaaS, AI, agent, and review directories for discovery and links.",
+      "prompt": "Make a directory submission list for an AI developer tool. Group them by fit and say what each listing should claim.",
+      "related": [
+        "launch",
+        "ai-seo",
+        "public-relations"
+      ]
+    },
+    {
+      "slug": "cro",
+      "title": "Conversion Optimization",
+      "category": "Conversion",
+      "summary": "Improves conversions on marketing pages and forms: homepage, landing pages, pricing, and lead capture.",
+      "prompt": "Review this landing page for conversions. List the highest-leverage changes first, and separate copy issues from layout issues.",
+      "related": [
+        "copywriting",
+        "signup",
+        "popups",
+        "ab-testing"
+      ]
+    },
+    {
+      "slug": "signup",
+      "title": "Signup Flow",
+      "category": "Conversion",
+      "summary": "Reduces friction in registration, account creation, and trial activation.",
+      "prompt": "Walk our signup flow. Tell me which fields to cut and what the first screen after submit should promise.",
+      "related": [
+        "onboarding",
+        "cro"
+      ]
+    },
+    {
+      "slug": "onboarding",
+      "title": "Onboarding",
+      "category": "Conversion",
+      "summary": "Improves what happens after signup: activation, first-run, and time-to-value.",
+      "prompt": "Map the first session for a new user. Define the one action that counts as activated and the emails that support it.",
+      "related": [
+        "signup",
+        "emails",
+        "cro"
+      ]
+    },
+    {
+      "slug": "popups",
+      "title": "Popups",
+      "category": "Conversion",
+      "summary": "Designs popups, modals, slide-ins, and banners that earn the interruption.",
+      "prompt": "Design one exit popup for the pricing page. Write the copy and the rule for when it must not appear.",
+      "related": [
+        "cro",
+        "copywriting",
+        "emails"
+      ]
+    },
+    {
+      "slug": "paywalls",
+      "title": "Paywalls",
+      "category": "Conversion",
+      "summary": "Designs in-app upgrade screens, upsell modals, and feature gates.",
+      "prompt": "Rewrite our upgrade modal. The user just hit the project limit. Lead with what they were trying to do.",
+      "related": [
+        "pricing",
+        "cro",
+        "onboarding"
+      ]
+    },
+    {
+      "slug": "ads",
+      "title": "Paid Ads",
+      "category": "Paid & distribution",
+      "summary": "Plans paid campaigns on Google, Meta, LinkedIn, X, and similar platforms, including whether ads are the right move.",
+      "prompt": "Should we run paid search for this product yet? If yes, outline one campaign, the query themes, and what we must track first.",
+      "related": [
+        "ad-creative",
+        "analytics",
+        "attribution"
+      ]
+    },
+    {
+      "slug": "ad-creative",
+      "title": "Ad Creative",
+      "category": "Paid & distribution",
+      "summary": "Generates and iterates ad headlines, descriptions, primary text, and full variations for testing.",
+      "prompt": "Write 15 Google RSA headlines and 4 descriptions from our product marketing context. Mark which ones are angles, not synonyms.",
+      "related": [
+        "ads",
+        "copywriting",
+        "image"
+      ]
+    },
+    {
+      "slug": "events",
+      "title": "Events",
+      "category": "Paid & distribution",
+      "summary": "Plans webinars, conferences, sponsorships, speaking, and the pipeline work around them.",
+      "prompt": "Plan a 40-minute webinar that can feed the trial. Include the promise, the outline, and the follow-up email.",
+      "related": [
+        "launch",
+        "emails",
+        "co-marketing",
+        "public-relations"
+      ]
+    },
+    {
+      "slug": "influencer-marketing",
+      "title": "Influencer Marketing",
+      "category": "Paid & distribution",
+      "summary": "Runs creator and ambassador partnerships: who to approach, how to brief them, and how to judge the return.",
+      "prompt": "Draft a creator brief for a LinkedIn operator with about 20k followers. Include the claim they may not make.",
+      "related": [
+        "referrals",
+        "ad-creative",
+        "community-marketing"
+      ]
+    },
+    {
+      "slug": "analytics",
+      "title": "Analytics",
+      "category": "Measurement",
+      "summary": "Sets up or audits measurement: GA4, product events, UTMs, tag managers, and whether the numbers mean anything.",
+      "prompt": "Write a tracking plan for trial start, activation, and upgrade. Name the event, the properties, and where it should fire.",
+      "related": [
+        "ab-testing",
+        "attribution",
+        "cro"
+      ]
+    },
+    {
+      "slug": "ab-testing",
+      "title": "A/B Testing",
+      "category": "Measurement",
+      "summary": "Designs experiments and a small experimentation habit: hypothesis, variant, sample, and when to stop.",
+      "prompt": "Turn this homepage headline debate into an A/B test. Write the hypothesis, the two variants, and the decision rule.",
+      "related": [
+        "cro",
+        "analytics",
+        "copywriting"
+      ]
+    },
+    {
+      "slug": "attribution",
+      "title": "Attribution",
+      "category": "Measurement",
+      "summary": "Chooses and interprets attribution when ad platforms, analytics, and the CRM disagree about what drove revenue.",
+      "prompt": "Our ads dashboard and GA4 disagree on signups. Explain what each is counting and what question I should ask instead.",
+      "related": [
+        "analytics",
+        "ads",
+        "revops"
+      ]
+    },
+    {
+      "slug": "referrals",
+      "title": "Referrals",
+      "category": "Growth & retention",
+      "summary": "Designs referral, affiliate, or word-of-mouth programs, including the incentive and the loop.",
+      "prompt": "Design a referral program for a B2B tool. Decide who gets rewarded, when, and what would make this feel spammy.",
+      "related": [
+        "launch",
+        "emails",
+        "community-marketing"
+      ]
+    },
+    {
+      "slug": "free-tools",
+      "title": "Free Tools",
+      "category": "Growth & retention",
+      "summary": "Evaluates or specs a free tool used as a marketing asset: lead capture, search value, or brand.",
+      "prompt": "Propose one free tool that matches our product. Say who it's for, why they'd share it, and how it hands off to the trial.",
+      "related": [
+        "lead-magnets",
+        "programmatic-seo",
+        "content-strategy"
+      ]
+    },
+    {
+      "slug": "co-marketing",
+      "title": "Co-marketing",
+      "category": "Growth & retention",
+      "summary": "Finds partner companies and plans a joint campaign, integration story, or cross-promotion.",
+      "prompt": "List five co-marketing partners that share our customer and don't compete on the core job. Draft the ask for the best one.",
+      "related": [
+        "launch",
+        "referrals",
+        "events"
+      ]
+    },
+    {
+      "slug": "community-marketing",
+      "title": "Community Marketing",
+      "category": "Growth & retention",
+      "summary": "Plans community-led growth: Discord, Slack, forums, and turning customers into advocates.",
+      "prompt": "Decide whether we should start a community now. If yes, name the smallest version and the weekly ritual that keeps it alive.",
+      "related": [
+        "social",
+        "referrals",
+        "customer-research"
+      ]
+    },
+    {
+      "slug": "lead-magnets",
+      "title": "Lead Magnets",
+      "category": "Growth & retention",
+      "summary": "Plans a lead magnet and the capture-to-email path around it.",
+      "prompt": "Design a lead magnet for people comparing us to a spreadsheet. Outline the asset, the form, and the first follow-up email.",
+      "related": [
+        "emails",
+        "copywriting",
+        "cro",
+        "free-tools"
+      ]
+    },
+    {
+      "slug": "churn-prevention",
+      "title": "Churn Prevention",
+      "category": "Growth & retention",
+      "summary": "Builds cancel flows, save offers, failed-payment recovery, and win-back for people who are leaving.",
+      "prompt": "Design a cancellation flow. Include the survey, one save offer, and the case where we should let them go.",
+      "related": [
+        "emails",
+        "paywalls",
+        "onboarding"
+      ]
+    },
+    {
+      "slug": "revops",
+      "title": "RevOps",
+      "category": "Sales & GTM",
+      "summary": "Designs lead lifecycle, scoring, routing, and the handoff from marketing to sales.",
+      "prompt": "Define when a trial user should become a sales conversation. Write the lifecycle stages and the fields both teams must share.",
+      "related": [
+        "sales-enablement",
+        "cold-email",
+        "analytics"
+      ]
+    },
+    {
+      "slug": "sales-enablement",
+      "title": "Sales Enablement",
+      "category": "Sales & GTM",
+      "summary": "Creates the artifacts a sales conversation needs: decks, one-pagers, objection notes, and demo scripts.",
+      "prompt": "Write a one-page leave-behind and a short objection list for a first call with a marketing lead.",
+      "related": [
+        "competitors",
+        "copywriting",
+        "cold-email",
+        "offers"
+      ]
+    },
+    {
+      "slug": "prospecting",
+      "title": "Prospecting",
+      "category": "Sales & GTM",
+      "summary": "Finds and qualifies prospects \u2014 B2B SaaS, broader B2B, or local businesses \u2014 into a list you can actually work.",
+      "prompt": "Define our prospecting list from the ICP in product marketing context. Give inclusion rules and three reasons to disqualify.",
+      "related": [
+        "cold-email",
+        "competitor-profiling",
+        "revops"
+      ]
+    },
+    {
+      "slug": "public-relations",
+      "title": "Public Relations",
+      "category": "Sales & GTM",
+      "summary": "Plans earned media: press angles, journalist outreach, and what is worth pitching.",
+      "prompt": "Find the press angle in this launch. Draft a short pitch and say which outlets it is not for.",
+      "related": [
+        "launch",
+        "social",
+        "directory-submissions"
+      ]
+    },
+    {
+      "slug": "competitor-profiling",
+      "title": "Competitor Profiling",
+      "category": "Sales & GTM",
+      "summary": "Researches competitors from their URLs into structured profiles you can reuse in positioning and sales.",
+      "prompt": "Profile these three competitor URLs. For each, capture who they serve, how they talk, and where they fall short for our ICP.",
+      "related": [
+        "competitors",
+        "sales-enablement",
+        "product-marketing"
+      ]
+    }
+  ]
+}

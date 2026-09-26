@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --paper: #f4efe6;
+  --paper-2: #fffdf8;
+  --ink: #1b1612;
+  --muted: #5c5348;
+  --faint: #8a7d6e;
+  --line: #e2d5c3;
+  --sienna: #9a3412;
+  --sienna-soft: #f6e4d6;
+  --forest: #1d4336;
+  --forest-soft: #e4efe8;
+  --shadow: 0 18px 50px rgba(60, 36, 14, 0.06);
+  color-scheme: light;
+}
+
+.dark {
+  --paper: #110f0c;
+  --paper-2: #1b1814;
+  --ink: #f6f1e8;
+  --muted: #cbbba8;
+  --faint: #9a8b7b;
+  --line: #312c26;
+  --sienna: #f0b08a;
+  --sienna-soft: #2c221c;
+  --forest: #b7d7c8;
+  --forest-soft: #17241e;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-sienna: var(--sienna);
+  --color-sienna-soft: var(--sienna-soft);
+  --color-forest: var(--forest);
+  --color-forest-soft: var(--forest-soft);
+  --font-sans: var(--font-source), "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-plex), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(154, 52, 18, 0.08), transparent 55%),
+    radial-gradient(900px 420px at 100% 0%, rgba(29, 67, 54, 0.07), transparent 50%),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+::selection {
+  background: var(--sienna-soft);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--sienna);
+  outline-offset: 3px;
+}
+
+.kicker {
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sienna);
+}
+
+.prose-measure {
+  max-width: 68ch;
+}
+
+.rule {
+  height: 1px;
+  background: var(--line);
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+}
+
+.inline-code {
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  border-radius: 0.35rem;
+  padding: 0.05rem 0.35rem;
+}
+
+a.quiet {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--sienna) 55%, transparent);
+  text-underline-offset: 0.18em;
+}
+
+a.quiet:hover {
+  text-decoration-color: var(--sienna);
+}
